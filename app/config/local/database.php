@@ -2,14 +2,19 @@
 
 return [
 
-    'default' => 'sqlite',
+// mysql local dev settings
 
-    'connections' => [
-        'sqlite' => [
-            'driver'   => 'sqlite',
-            'database' => __DIR__.'/../../database/local.sqlite',
-            'prefix'   => '',
-        ]
-    ]
-
+	'connections' => array(
+	
+		'mysql' => array(
+			'driver'    => 'mysql',
+			'host'      => 'localhost',
+			'database'  => 'homestead',
+			'username'  => 'homestead',
+			'password'  => 'secret',
+			'charset'   => 'utf8',
+			'collation' => 'utf8_unicode_ci',
+			'prefix'    => '',
+		)
+	)
 ];
