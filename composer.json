@@ -39,6 +39,8 @@
 	},
 	"minimum-stability": "stable",
 	"require-dev": {
-		"way/generators": "1.*"
+		"way/generators": "1.*",
+		"fzaninotto/faker" : "dev-master"
+
 	}
 }

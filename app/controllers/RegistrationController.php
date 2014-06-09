@@ -7,7 +7,7 @@ class RegistrationController extends BaseController {
 	/**
 	 * @var RegistrationForm
 	 */
-	private $registrationForm;
+	protected $registrationForm;
 
 	/**
 	 * @param RegistrationForm $registrationForm
@@ -36,7 +36,7 @@ class RegistrationController extends BaseController {
 	{
 		$input = Input::only('username', 'email', 'password', 'password_confirmation');
 
-		$this->registrationForm->validate($input);
+		$this->registrationForm->validate($input);	// see /app/start/global.php for error handling	
 
 		$user = User::create($input);
 

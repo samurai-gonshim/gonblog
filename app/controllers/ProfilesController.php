@@ -57,7 +57,7 @@ class ProfilesController extends BaseController {
 		$user = $this->getUserByUsername($username);
 		$input = Input::only('location', 'bio', 'twitter_username', 'github_username');
 
-		$this->profileForm->validate($input);
+		$this->profileForm->validate($input);	// see /app/start/global.php for error handling	
 
 		$user->profile->fill($input)->save();
 

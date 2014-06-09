@@ -8,7 +8,7 @@ class Profile extends Eloquent {
 	 * @var array
 	 */
 	protected $fillable = [
-		'location', 'bio',
+		'location', 'bio', 'facebook_username', 
 		'twitter_username', 'github_username'
 	];
 
