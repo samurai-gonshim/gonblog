@@ -22,4 +22,9 @@ class Blog extends Eloquent {
         return $this->morphMany('Comment', 'commentable');
     }
 
+    public function tags()
+    {
+        return $this->morphToMany('Tag', 'taggable');
+    }
+
 }
