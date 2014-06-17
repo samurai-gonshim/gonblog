@@ -24,19 +24,23 @@
         <div class="col-lg-8">
 
 		@foreach($blogs as $blog)
-            <h1><a href="blog-post.html">{{ $blog->title }}</a>
-            </h1>
-            <p class="lead">by <a href="#">{{ $blog->user->username }}</a>
-            </p>
+            <h1><a href="blog-post.html">{{ $blog->title }}</a></h1>
+            <p class="lead">by <a href="#">{{ $blog->user->username }}</a></p>
             <hr>
             <p><i class="fa fa-clock-o"></i> Posted on {{ $blog->created_at}} </p>
             <hr>
             <a href="blog-post.html">
-                <img src="http://placehold.it/900x300" class="img-responsive">
+                <img src="http://placehold.it/900x300/daebe9&text=No+Photo+Yet" class="img-responsive">
             </a>
             <hr>
-            <p>{{ $blog->body }} </p>
-            <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
+            <p>{{ str_limit($blog->body, 200, '...') }} </p>
+            <h5> <strong> Tags : </strong>
+                @foreach($blog->tags as $tag)
+                    <a class="btn btn-xs btn-success" href="#" role="button">{{ $tag->tag }}</a>
+                @endforeach
+            </h6>
+            
+            <a class="btn btn-sm btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
 
             <hr>
 		@endforeach
