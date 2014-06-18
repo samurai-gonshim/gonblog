@@ -13,8 +13,10 @@ Route::get('logout', ['as' => 'logout', 'uses' => 'SessionsController@destroy'])
 Route::resource('sessions', 'SessionsController', ['only' => ['create', 'store', 'destroy']]);
 
 # Blog/Comment Test
-Route::get('blog', ['as' => 'blog', 'uses' => 'BlogsController@index']);
+// Route::get('blog', ['as' => 'blog', 'uses' => 'BlogsController@index']);
+Route::resource('blog', 'BlogsController');
+
 # Profile
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'update']]);
-Route::get('/{username}', ['as' => 'profile', 'uses' => 'ProfilesController@show']);
+Route::get('/user/{username}', ['as' => 'profile', 'uses' => 'ProfilesController@show']);
 
