@@ -1,5 +1,7 @@
 @extends('layouts/layout')
 
+@section('meta-title', 'Blog Home')
+
 @section('content')
 
 <div class="container">
@@ -11,8 +13,7 @@
                 <small>Blog Homepage</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a>
-                </li>
+                <li> {{ link_to_route('home', 'Home') }} </li>
                 <li class="active">Blog Home</li>
             </ol>
         </div>
@@ -24,7 +25,7 @@
         <div class="col-lg-8">
 
 		@foreach($blogs as $blog)
-            <h1><a href="blog-post.html">{{ $blog->title }}</a></h1>
+            <h1>{{ link_to_route('blogs.show', $blog->title, [$blog->id]) }}</h1>
             <p class="lead">by <a href="#">{{ $blog->user->username }}</a></p>
             <hr>
             <p><i class="fa fa-clock-o"></i> Posted on {{ $blog->created_at}} </p>
@@ -38,9 +39,11 @@
                 @foreach($blog->tags as $tag)
                     <a class="btn btn-xs btn-success" href="#" role="button">{{ $tag->tag }}</a>
                 @endforeach
-            </h6>
+            </h5>
+
+            <p>{{ HTML::decode(link_to_route('blogs.show', 'Read More '.'<i class="fa fa-angle-right"></i>', [$blog->id], ['class' => 'btn btn-sm btn-primary'])) }} </p>
             
-            <a class="btn btn-sm btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
+            <!-- <a class="btn btn-sm btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a> -->
 
             <hr>
 		@endforeach

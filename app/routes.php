@@ -4,7 +4,7 @@
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@index']);
 
 # Registration
-Route::get('/register', 'RegistrationController@create')->before('guest');
+Route::get('/register', ['as' => 'registration', 'uses' => 'RegistrationController@create'])->before('guest');
 Route::post('/register', ['as' => 'registration.store', 'uses' => 'RegistrationController@store']);
 
 # Authentication
@@ -14,7 +14,7 @@ Route::resource('sessions', 'SessionsController', ['only' => ['create', 'store',
 
 # Blog/Comment Test
 // Route::get('blog', ['as' => 'blog', 'uses' => 'BlogsController@index']);
-Route::resource('blog', 'BlogsController');
+Route::resource('blogs', 'BlogsController');
 
 # Profile
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'update']]);

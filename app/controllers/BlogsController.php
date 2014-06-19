@@ -10,7 +10,7 @@ class BlogsController extends BaseController {
 	public function index()
 	{
 		$blogs = Blog::with('User')->get();
-
+        
         return View::make('blogs.index', compact('blogs'));
 	}
     /**

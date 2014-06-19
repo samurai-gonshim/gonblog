@@ -19,6 +19,10 @@
 		"selected_items":
 		[
 			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
 				"packa",
 				"Package Control: Install Package"
 			],
@@ -63,7 +67,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 464.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -84,21 +88,17 @@
 	},
 	"file_history":
 	[
-		"/Users/gonshim/Dev/registration-test/app/views/blogs/index.blade.php",
-		"/Users/gonshim/Dev/registration-test/app/views/blogs/origin.blade.php",
-		"/Users/gonshim/Dev/registration-test/app/models/Blog.php",
-		"/Users/gonshim/Dev/registration-test/app/database/seeds/UsersTableSeeder.php",
-		"/Users/gonshim/Dev/registration-test/app/database/seeds/DatabaseSeeder.php",
-		"/Users/gonshim/Dev/registration-test/app/database/seeds/BlogsTableSeeder.php",
-		"/Users/gonshim/Dev/registration-test/app/database/seeds/CommentsTableSeeder.php",
-		"/Users/gonshim/Dev/registration-test/app/database/seeds/TagsTableSeeder.php",
-		"/Users/gonshim/Dev/registration-test/app/models/Comment.php",
-		"/Users/gonshim/Dev/registration-test/app/views/layouts/layout.blade.php",
-		"/Users/gonshim/Dev/registration-test/app/views/pages/index.blade.php",
-		"/Users/gonshim/Dev/registration-test/app/views/layouts/partials/navbar.blade.php",
-		"/Users/gonshim/Dev/registration-test/bootstrap/start.php",
-		"/home/gonshim/Code/registration-test/public/assets/css/bootstrap.min.css",
+		"/home/gonshim/Code/startbootstrap/templates/modern-business/index.html",
+		"/home/gonshim/Code/startbootstrap/templates/modern-business/blog-home-1.html",
+		"/home/gonshim/Code/registration-test/app/views/blogs/origin.blade.php",
 		"/home/gonshim/Code/registration-test/app/views/layouts/layout.blade.php",
+		"/home/gonshim/Code/registration-test/app/views/blogs/index.blade.php",
+		"/home/gonshim/Code/registration-test/vendor/bin/boris",
+		"/home/gonshim/Code/registration-test/app/models/Blog.php",
+		"/home/gonshim/Code/registration-test/app/views/pages/index.blade.php",
+		"/home/gonshim/Code/registration-test/app/views/layouts/partials/navbar.blade.php",
+		"/home/gonshim/Code/registration-test/bootstrap/start.php",
+		"/home/gonshim/Code/registration-test/public/assets/css/bootstrap.min.css",
 		"/home/gonshim/Code/registration-test/app/models/Comment.php",
 		"/home/gonshim/Code/bootswatch-test/custom/bootstrap.css",
 		"/home/gonshim/Code/registration-test/composer.json",
@@ -183,7 +183,7 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -217,6 +217,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -236,11 +241,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -351,7 +363,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 193.0,
+	"side_bar_width": 231.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
