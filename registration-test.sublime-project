@@ -4,14 +4,6 @@
 		{
 			"follow_symlinks": true,
 			"path": "."
-		},
-		{
-			"follow_symlinks": true,
-			"path": "/home/gonshim/Code/scaffold"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "/home/gonshim/Code/startbootstrap/templates/modern-business"
 		}
 	]
 }

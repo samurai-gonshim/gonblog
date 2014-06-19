@@ -14,7 +14,7 @@
             </h1>
             <ol class="breadcrumb">
                 <li> {{ link_to_route('home', 'Home') }} </li>
-                <li class="active">Blog Home</li>
+                <li class={{ set_active_route('blogs') }}>Blog Home</li>
             </ol>
         </div>
 
@@ -26,7 +26,7 @@
 
 		@foreach($blogs as $blog)
             <h1>{{ link_to_route('blogs.show', $blog->title, [$blog->id]) }}</h1>
-            <p class="lead">by <a href="#">{{ $blog->user->username }}</a></p>
+            <p class="lead">by {{ HTML::mailto($blog->user->email, $blog->user->username) }} </p>
             <hr>
             <p><i class="fa fa-clock-o"></i> Posted on {{ $blog->created_at}} </p>
             <hr>

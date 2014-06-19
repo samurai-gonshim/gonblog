@@ -12,11 +12,11 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class={{ set_active_route('home') }}> {{ link_to_route('home', 'Home') }} </li>
-                <li class={{ set_active('blogs') }}> {{ link_to_route('blogs.index', 'Blogs') }}</li>
+                <li class={{ set_active_route('blogs') }}> {{ link_to_route('blogs.index', 'Blogs') }}</li>
 
                 @if (Auth::guest())
-                    <li class={{ set_active('register') }}> {{ link_to_route('registration', 'Register') }}</li>
-                    <li class={{ set_active('login') }}> {{ link_to_route('login', 'Login') }}</li>
+                    <li class={{ set_active_route('registration') }}> {{ link_to_route('registration', 'Register') }}</li>
+                    <li class={{ set_active_route('login') }}> {{ link_to_route('login', 'Login') }}</li>
                 @else
                     <li class={{ set_active_route('profile') }}>{{ link_to_profile() }}</li>
                     <li>{{ link_to_route('logout', 'Logout') }}</li>
