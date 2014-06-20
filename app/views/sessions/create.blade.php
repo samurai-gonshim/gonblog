@@ -22,7 +22,7 @@
         
         <!-- Log In! Field -->
         <div class="form-group">
-            {{ Form::submit('Log In!', ['class' => 'btn btn-primary']) }}
+            {{ Form::submit('Log In!', ['class' => 'btn btn-sm btn-primary']) }}
         </div>
 
         @if (Session::has('flash_message'))

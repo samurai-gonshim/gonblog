@@ -35,7 +35,7 @@
         
             <!-- Create Account Field -->
             <div class="form-group">
-                {{ Form::submit('Create Account', ['class' => 'btn btn-primary']) }}
+                {{ Form::submit('Create Account', ['class' => 'btn btn-sm btn-primary']) }}
             </div>
         {{ Form::close() }}
         

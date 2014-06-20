@@ -21,6 +21,10 @@
             <!-- the actual blog post: title/author/date/content -->
             <p><i class="fa fa-clock-o"></i> Posted on {{ $blog->created_at }} by {{ HTML::mailto($blog->user->email, $blog->user->username) }}</a>
             </p>
+            <!-- Tags -->
+            @include('layouts.partials.tag')
+
+
             <img src="http://placehold.it/900x300" class="img-responsive">
             <hr>
             <p>{{{ $blog->body }}}</p>
@@ -39,15 +43,12 @@
 
 
             <!-- the comments -->
-            <h3>Start Bootstrap
-                <small>9:41 PM on August 24, 2013</small>
-            </h3>
-            <p>This has to be the worst blog post I have ever read. It simply makes no sense. You start off by talking about space or something, then you randomly start babbling about cupcakes, and you end off with random fish names.</p>
-
-            <h3>Start Bootstrap
-                <small>9:47 PM on August 24, 2013</small>
-            </h3>
-            <p>Don't listen to this guy, any blog with the categories 'dinosaurs, spaceships, fried foods, wild animals, alien abductions, business casual, robots, and fireworks' has true potential.</p>
+            @foreach($blog->comments as $comment)
+                <h3>{{ $comment->user->username }}
+                    <small>{{ $comment->created_at }}</small>
+                </h3>
+                <i class="fa fa-comment-o fa-2x pull-left fa-border text-info"></i><p>{{ $comment->comment }}</p>
+            @endforeach
 
         </div>
 
@@ -94,10 +95,12 @@
                 </div>
             </div>
             <!-- /well -->
+            @if($blog->user_id === Auth::user()->id)
             <div class="well">
-                <h4>Side Widget Well</h4>
-                <p>Bootstrap's default well's work great for side widgets! What is a widget anyways...?</p>
+                <h4>Blog Edits</h4>
+                <p>{{ HTML::decode(link_to_route('blogs.destroy', '<i class="fa fa-trash-o"></i>'.'  Delete This Post', [$blog->id], ['class' => 'btn btn-sm btn-danger'])) }} </p>
             </div>
+            @endif
             <!-- /well -->
         </div>
     </div>

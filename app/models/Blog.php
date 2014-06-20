@@ -9,7 +9,7 @@ class Blog extends Eloquent {
      * @var array
      */
     protected $fillable = [
-        'title', 'body'
+        'title', 'body', 'user_id'
     ];
 
     public function user()

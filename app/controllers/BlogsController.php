@@ -1,6 +1,21 @@
 <?php
 
+use Acme\Forms\BlogForm;
+
 class BlogsController extends BaseController {
+
+    /**
+     * @var BlogForm
+     */
+    protected $blogForm;
+
+    /**
+     * @param BlogForm $blogForm
+     */
+    function __construct(BlogForm $blogForm)
+    {
+        $this->blogForm = $blogForm;
+    }
 
 	/**
 	 * Display a listing of the resource.
@@ -24,20 +39,19 @@ class BlogsController extends BaseController {
     }
 
     /**
-     * Store a newly created blog in storage.
+     * Store a newly created resource in storage.
      *
      * @return Response
      */
     public function store()
     {
-        $validator = Validator::make($data = Input::all(), Blog::$rules);
+        $input = Input::only('title', 'body', 'user_id');
+        // user_id gets passed through hidden form
 
-        if ($validator->fails())
-        {
-            return Redirect::back()->withErrors($validator)->withInput();
-        }
+        $this->blogForm->validate($input);  // see /app/start/global.php for error handling 
+        // var_dump($input);
 
-        Blog::create($data);
+        Blog::create($input);
 
         return Redirect::route('blogs.index');
     }
@@ -98,9 +112,11 @@ class BlogsController extends BaseController {
      */
     public function destroy($id)
     {
-        Blog::destroy($id);
+        var_dump('destory id of '.$id);
 
-        return Redirect::route('blogs.index');
+        // Blog::destroy($id);
+
+        // return Redirect::route('blogs.index');
     }
 
 

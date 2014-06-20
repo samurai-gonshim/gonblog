@@ -29,18 +29,21 @@
             <p class="lead">by {{ HTML::mailto($blog->user->email, $blog->user->username) }} </p>
             <hr>
             <p><i class="fa fa-clock-o"></i> Posted on {{ $blog->created_at}} </p>
+            <!-- Tags -->
+            @include('layouts.partials.tag')
             <hr>
+
+            <!-- Image -->
             <a href="blog-post.html">
                 <img src="http://placehold.it/900x300/daebe9&text=No+Photo+Yet" class="img-responsive">
             </a>
             <hr>
+            <!-- body -->
             <p>{{ str_limit($blog->body, 200, '...') }} </p>
-            <h5> <strong> Tags : </strong>
-                @foreach($blog->tags as $tag)
-                    <a class="btn btn-xs btn-success" href="#" role="button">{{ $tag->tag }}</a>
-                @endforeach
-            </h5>
-
+            
+            <!-- Comment counts(ugly) -->
+            <p><i class="fa fa-comments"></i> {{ $c = $blog->comments()->count() }} {{ ($c > 1) ? "Comments" : "Comment" }} </p>
+            <!-- link to a blog post -->
             <p>{{ HTML::decode(link_to_route('blogs.show', 'Read More '.'<i class="fa fa-angle-right"></i>', [$blog->id], ['class' => 'btn btn-sm btn-primary'])) }} </p>
             
             <!-- <a class="btn btn-sm btn-primary" href="#">Read More <i class="fa fa-angle-right"></i></a> -->
