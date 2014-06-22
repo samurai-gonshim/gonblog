@@ -13,7 +13,7 @@ class AddCommentableToCommentsTable extends Migration {
 	public function up()
 	{
 		Schema::table('comments', function(Blueprint $table) {
-			$table->integer('commentable_id');
+			$table->integer('commentable_id')->unsigned();
 			$table->string('commentable_type');
 		});
 	}

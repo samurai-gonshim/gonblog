@@ -6,7 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 class CreateTaggablesTable extends Migration {
 
 	/**
-	 * Run the migrations.
+	 * Run the migrations.	
 	 *
 	 * @return void
 	 */
@@ -14,7 +14,8 @@ class CreateTaggablesTable extends Migration {
 	{
 		Schema::create('taggables', function(Blueprint $table) {
 			$table->increments('id');
-			$table->integer('tag_id');
+			$table->integer('tag_id')->unsinged();
+			// $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
 			$table->integer('taggable_id');
 			$table->string('taggable_type');
 			$table->timestamps();

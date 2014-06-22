@@ -41,8 +41,9 @@
             <!-- body -->
             <p>{{ str_limit($blog->body, 200, '...') }} </p>
             
-            <!-- Comment counts(ugly) -->
-            <p><i class="fa fa-comments"></i> {{ $c = $blog->comments()->count() }} {{ ($c > 1) ? "Comments" : "Comment" }} </p>
+            <!-- Comment counts -->
+            @include('layouts.partials.comment')
+
             <!-- link to a blog post -->
             <p>{{ HTML::decode(link_to_route('blogs.show', 'Read More '.'<i class="fa fa-angle-right"></i>', [$blog->id], ['class' => 'btn btn-sm btn-primary'])) }} </p>
             

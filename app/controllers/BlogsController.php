@@ -90,16 +90,13 @@ class BlogsController extends BaseController {
      */
     public function update($id)
     {
-        $blog = Blog::findOrFail($id);
+        // return 'update path id : '.$id;
 
-        $validator = Validator::make($data = Input::all(), Blog::$rules);
+        $input = Input::only('title', 'body', 'user_id');
+        // user_id gets passed through hidden form
+        $this->blogForm->validate($input);  // see /app/start/global.php for error handling 
 
-        if ($validator->fails())
-        {
-            return Redirect::back()->withErrors($validator)->withInput();
-        }
-
-        $blog->update($data);
+        Blog::findOrFail($id)->update($input);
 
         return Redirect::route('blogs.index');
     }
@@ -112,11 +109,12 @@ class BlogsController extends BaseController {
      */
     public function destroy($id)
     {
-        var_dump('destory id of '.$id);
+        // var_dump('destory id of '.$id);
+        $blog = Blog::findOrFail($id);
+        $blog->delete();
+        $blog->deleteAssociated();  // delete associated models
 
-        // Blog::destroy($id);
-
-        // return Redirect::route('blogs.index');
+        return Redirect::route('blogs.index');
     }
 
 

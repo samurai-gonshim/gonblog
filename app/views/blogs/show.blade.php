@@ -39,8 +39,10 @@
                 </li>
             </ul>
 
-            <hr>
+            <!-- Comment counts -->
+            @include('layouts.partials.comment')
 
+            <hr>
 
             <!-- the comments -->
             @foreach($blog->comments as $comment)
@@ -95,11 +97,26 @@
                 </div>
             </div>
             <!-- /well -->
-            @if($blog->user_id === Auth::user()->id)
-            <div class="well">
-                <h4>Blog Edits</h4>
-                <p>{{ HTML::decode(link_to_route('blogs.destroy', '<i class="fa fa-trash-o"></i>'.'  Delete This Post', [$blog->id], ['class' => 'btn btn-sm btn-danger'])) }} </p>
-            </div>
+            @if($blog->isOwner())
+                <div class="well">
+                    <h4>Edit Your Post</h4>
+                    <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                        <!-- Edit Post -->
+                        <p>{{ HTML::decode(link_to_route('blogs.edit', '<i class="fa fa-edit"></i>'.' Edit This Post', [$blog->id], ['class' => 'btn btn-xs btn-info'])) }}</p>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Delete post -->
+                        <ul class="list-unstyled">
+                        {{ Form::open(['route' => ['blogs.destroy', $blog->id], 'method' => 'DELETE']) }}
+                            <button class="btn btn-xs btn-danger" type="submit" ><i class="fa fa-trash-o"></i> Delete This Post</button>
+                        {{ Form::close() }}
+                        </ul>
+                    </div>
+                    </div>
+                </div>
             @endif
             <!-- /well -->
         </div>

@@ -4,7 +4,7 @@ class Comment extends Eloquent {
 	protected $guarded = array();
 
     protected $fillable = [
-        'comment'
+        'comment', 'user_id', 'commentable_id', 'commentable_type'
     ];
 
     public function commentable()
