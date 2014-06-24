@@ -1,0 +1,464 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"Fo",
+				"Form-label	Form-label"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":wq",
+				"Laravel Artisan: Queue: Work"
+			],
+			[
+				":q",
+				"Snippet: Queue-later"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/gonshim/Dev/registration-test/app/models/Blog.php",
+		"/Users/gonshim/Dev/registration-test/app/controllers/BlogsController.php",
+		"/Users/gonshim/Dev/registration-test/app/views/blogs/create.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/views/blogs/edit.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/views/blogs/index.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/views/layouts/partials/comment.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/views/blogs/show.blade.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php",
+		"/Users/gonshim/Dev/registration-test/app/routes.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/MassAssignmentException.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasManyThrough.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsTo.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphToMany.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphTo.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php",
+		"/Users/gonshim/Dev/registration-test/vendor/monolog/monolog/src/Monolog/Handler/ErrorLogHandler.php",
+		"/Users/gonshim/Dev/registration-test/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/EventListener/EsiListener.php",
+		"/Users/gonshim/Dev/registration-test/app/tests/ExampleTest.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php",
+		"/Users/gonshim/Dev/registration-test/vendor/predis/predis/lib/Predis/Command/HashScan.php",
+		"/Users/gonshim/Dev/registration-test/vendor/predis/predis/lib/Predis/Command/HashGetAll.php",
+		"/Users/gonshim/Dev/registration-test/app/Acme/helpers.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php",
+		"/Users/gonshim/Dev/registration-test/app/config/mail.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php",
+		"/Users/gonshim/Dev/registration-test/vendor/monolog/monolog/src/Monolog/Handler/ZendMonitorHandler.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOne.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphPivot.php",
+		"/Users/gonshim/Dev/gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php",
+		"/Users/gonshim/Dev/registration-test/vendor/monolog/monolog/tests/Monolog/Handler/MockRavenClient.php",
+		"/Users/gonshim/Dev/registration-test/vendor/way/generators/tests/generators/stubs/model.txt",
+		"/Users/gonshim/Dev/registration-test/public/assets/css/modern-business.css",
+		"/Users/gonshim/Dev/registration-test/vendor/symfony/translation/Symfony/Component/Translation/Catalogue/MergeOperation.php",
+		"/Users/gonshim/Dev/registration-test/app/database/migrations/2014_06_13_180420_create_taggables_table.php",
+		"/Users/gonshim/Dev/registration-test/app/database/migrations/2014_05_05_140100_create_profiles_table.php",
+		"/Users/gonshim/Dev/registration-test/app/database/migrations/2014_06_11_165638_add_user_id_to_blogs_table.php",
+		"/Users/gonshim/Dev/registration-test/app/database/migrations/2014_06_11_165754_add_user_id_to_comments_table.php",
+		"/Users/gonshim/Dev/registration-test/app/database/migrations/2014_06_11_171955_add_commentable_to_comments_table.php",
+		"/Users/gonshim/Dev/registration-test/app/models/Comment.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php",
+		"/Users/gonshim/Dev/gonblog/vendor/way/generators/tests/features/migrations.feature",
+		"/Users/gonshim/Dev/registration-test/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Transport/MailInvoker.php",
+		"/Users/gonshim/Dev/registration-test/app/database/migrations/2014_04_30_170459_create_users_table.php",
+		"/Users/gonshim/Dev/gonblog/app/views/photos/create.blade.php",
+		"/Users/gonshim/Dev/gonblog/app/models/Post.php",
+		"/Users/gonshim/Dev/registration-test/vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php",
+		"/Users/gonshim/Dev/registration-test/vendor/predis/predis/tests/Predis/HelpersTest.php",
+		"/Users/gonshim/Dev/registration-test/app/views/layouts/partials/navbar.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/views/layouts/layout.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/views/pages/index.blade.php",
+		"/Users/gonshim/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gonshim/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/gonshim/Dev/registration-test/vendor/predis/predis/lib/Predis/Command/HashExists.php",
+		"/Users/gonshim/Dev/gonblog/app/controllers/PostsController.php",
+		"/Users/gonshim/Dev/gonblog/app/views/posts/create.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/database/local.sqlite",
+		"/Users/gonshim/Dev/registration-test/vendor/predis/predis/lib/Predis/Command/ListIndex.php",
+		"/Users/gonshim/Dev/registration-test/vendor/symfony/dom-crawler/Symfony/Component/DomCrawler/Link.php",
+		"/Users/gonshim/Dev/registration-test/vendor/predis/predis/lib/Predis/Collection/Iterator/ListKey.php",
+		"/Users/gonshim/Dev/registration-test/app/controllers/ProfilesController.php",
+		"/Users/gonshim/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/gonshim/Dev/registration-test/app/views/blogs/origin.blade.php",
+		"/Users/gonshim/Dev/registration-test/app/database/seeds/UsersTableSeeder.php",
+		"/Users/gonshim/Dev/registration-test/app/database/seeds/DatabaseSeeder.php",
+		"/Users/gonshim/Dev/registration-test/app/database/seeds/BlogsTableSeeder.php",
+		"/Users/gonshim/Dev/registration-test/app/database/seeds/CommentsTableSeeder.php",
+		"/Users/gonshim/Dev/registration-test/app/database/seeds/TagsTableSeeder.php",
+		"/Users/gonshim/Dev/registration-test/bootstrap/start.php",
+		"/home/gonshim/Code/registration-test/public/assets/css/bootstrap.min.css",
+		"/home/gonshim/Code/registration-test/app/views/layouts/layout.blade.php",
+		"/home/gonshim/Code/registration-test/app/models/Comment.php",
+		"/home/gonshim/Code/bootswatch-test/custom/bootstrap.css",
+		"/home/gonshim/Code/registration-test/composer.json",
+		"/home/gonshim/Code/gonblog/app/database/seeds/UsersTableSeeder.php",
+		"/home/gonshim/Code/registration-test/app/routes.php",
+		"/home/gonshim/Code/registration-test/app/config/app.php",
+		"/home/gonshim/Code/gonblog/app/config/app.php",
+		"/home/gonshim/Code/gonblog/composer.json",
+		"/home/gonshim/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/gonshim/Code/registration-test/app/database/migrations/2014_05_05_140100_create_profiles_table.php",
+		"/home/gonshim/Code/registration-test/app/database/seeds/DatabaseSeeder.php",
+		"/home/gonshim/Code/registration-test/app/filters.php",
+		"/home/gonshim/Code/registration-test/app/controllers/ProfilesController.php",
+		"/home/gonshim/Code/registration-test/app/controllers/RegistrationController.php",
+		"/home/gonshim/Code/registration-test/app/models/Profile.php",
+		"/home/gonshim/Code/registration-test/app/Acme/Forms/RegistrationForm.php",
+		"/home/gonshim/Code/registration-test/app/models/User.php",
+		"/home/gonshim/Code/registration-test/app/views/registration/create.blade.php",
+		"/home/gonshim/Code/registration-test/app/database/migrations/2014_04_30_170459_create_users_table.php",
+		"/home/gonshim/Code/registration-test/app/controllers/SessionsController.php",
+		"/home/gonshim/Code/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php",
+		"/home/gonshim/Code/registration-test/vendor/predis/predis/lib/Predis/Command/HashScan.php",
+		"/home/gonshim/Code/registration-test/vendor/predis/predis/lib/Predis/Command/HashGetAll.php",
+		"/home/gonshim/Code/registration-test/app/Acme/helpers.php",
+		"/home/gonshim/Code/registration-test/vendor/laracasts/validation/src/Laracasts/Validation/FormValidator.php",
+		"/home/gonshim/Code/registration-test/app/start/global.php",
+		"/home/gonshim/Code/registration-test/vendor/nikic/php-parser/lib/PHPParser/Error.php",
+		"/home/gonshim/Code/registration-test/vendor/laravel/framework/src/Illuminate/View/Engines/EngineResolver.php",
+		"/home/gonshim/Code/registration-test/app/tests/ExampleTest.php",
+		"/home/gonshim/Code/registration-test/vendor/laracasts/validation/src/Laracasts/Validation/FormValidationException.php",
+		"/home/gonshim/Code/registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php",
+		"/home/gonshim/Code/registration-test/vendor/symfony/dom-crawler/Symfony/Component/DomCrawler/Form.php",
+		"/home/gonshim/Code/registration-test/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Fixtures/KernelForOverrideName.php",
+		"/home/gonshim/Code/registration-test/app/views/sessions/create.blade.php",
+		"/home/gonshim/Code/registration-test/vendor/mustache/mustache/bin/create_example.php",
+		"/home/gonshim/Code/registration-test/vendor/phpseclib/phpseclib/build/code-sniffer-ruleset.xml",
+		"/home/gonshim/Code/registration-test/vendor/monolog/monolog/src/Monolog/Registry.php",
+		"/home/gonshim/Code/registration-test/app/config/database.php",
+		"/home/gonshim/Code/registration-test/app/database/production.sqlite",
+		"/home/gonshim/Code/registration-test/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php",
+		"/home/gonshim/Code/registration-test/app/controllers/PagesController.php",
+		"/home/gonshim/Code/registration-test/app/config/testing/session.php",
+		"/home/gonshim/Code/registration-test/app/config/session.php",
+		"/home/gonshim/Code/registration-test/vendor/predis/predis/lib/Predis/Command/ServerEvalSHA.php"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"b",
+			"B",
+			"b",
+			"polymor",
+			"button",
+			" \n",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"find_under_expand",
+			"super+d",
+			"post",
+			"Post",
+			"post",
+			"blog",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"Post",
+			"post",
+			"select"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "gonblog.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"eloquent",
+				"registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
+			],
+			[
+				"hasonemany",
+				"registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOneOrMany.php"
+			],
+			[
+				"morphoneor",
+				"registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphOneOrMany.php"
+			],
+			[
+				"morph",
+				"gonblog/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php"
+			],
+			[
+				"morphmany",
+				"registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/MorphMany.php"
+			],
+			[
+				"model",
+				"registration-test/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
+			],
+			[
+				"migra",
+				"registration-test/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php"
+			],
+			[
+				"html",
+				"vendor/laravel/framework/src/Illuminate/Html/HtmlBuilder.php"
+			],
+			[
+				"hel",
+				"registration-test/app/Acme/helpers.php"
+			],
+			[
+				"commen",
+				"app/models/Comment.php"
+			],
+			[
+				"hasone",
+				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/HasOne.php"
+			],
+			[
+				"formvalidationexception",
+				"vendor/laracasts/validation/src/Laracasts/Validation/FormValidationException.php"
+			],
+			[
+				"formvail",
+				"vendor/laracasts/validation/src/Laracasts/Validation/FormValidator.php"
+			],
+			[
+				"regis",
+				"app/Acme/Forms/RegistrationForm.php"
+			],
+			[
+				"crea",
+				"app/views/registration/create.blade.php"
+			],
+			[
+				"profile",
+				"app/controllers/ProfilesController.php"
+			],
+			[
+				"sess",
+				"app/controllers/SessionsController.php"
+			],
+			[
+				"regi",
+				"app/controllers/RegistrationController.php"
+			],
+			[
+				"layout",
+				"app/views/layouts/layout.blade.php"
+			],
+			[
+				"pages",
+				"app/controllers/PagesController.php"
+			],
+			[
+				"page",
+				"app/controllers/PagesController.php"
+			],
+			[
+				"app/conf",
+				"app/config/app.php"
+			],
+			[
+				"app/config",
+				"app/config/app.php"
+			],
+			[
+				"co",
+				"composer.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
