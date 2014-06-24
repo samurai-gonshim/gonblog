@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,	// temporary setting
+	'debug' => false,	// temporary setting
 
 	/*
 	|--------------------------------------------------------------------------
