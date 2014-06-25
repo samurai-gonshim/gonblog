@@ -14,12 +14,17 @@ body {
 }
 
 .full-width-image {
-    background: url(http://lorempixel.com/1920/500/) no-repeat center center;
+    /*background: url(http://lorempixel.com/1920/500/) no-repeat center center;*/
+    background: url(/assets/img/openphotonet_11.jpg) no-repeat center center;
     background-size: cover;
     text-align: center;
     padding: 100px 0;
 }
 
+.landing-title {
+    font-weight: bold;
+    /*color: #2fbc2b;*/
+}
 
 .logo-wrapper {
     display: inline-block;
