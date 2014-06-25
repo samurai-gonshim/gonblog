@@ -17,14 +17,14 @@
 <body>
     @include('layouts/partials/navbar')
 
-    <div class="container">
+<!--     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                @yield('content')
-            </div>
+ -->                @yield('content')
+<!--             </div>
         </div>
     </div>
-
+ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>    
     <script src="/assets/js/modern-business.js"></script>

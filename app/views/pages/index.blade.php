@@ -1,13 +1,17 @@
 @extends('layouts/layout')
 
 @section('content')
-    <h1>
+<!--     <h1>
         {{ Auth::check() ? "Welcome, " . Auth::user()->username : "Why Don't You Sign Up?" }}
     </h1>
-    
-   	<div class="section"> 
+ -->    
+    <div class="full-width-image">
+    </div>
+
+ <!--   	<div class="section"> 
  	    <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. DThis is the landing page. いらっはいませ。</p>
 	</div>
+ -->
 
     <div class="section">
 

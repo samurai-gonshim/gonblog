@@ -25,3 +25,9 @@ function set_active_route($route, $active = 'active')
 {
     return (strpos(Route::currentRouteName(), $route) !== false) ? $active : '';
 }
+
+// return gravatar url 
+function gravatar_url($email)
+{
+    return 'http://www.gravatar.com/avatar/'.md5($email);
+}
