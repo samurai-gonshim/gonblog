@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('meta-title', 'Larademo')</title>
+    <title>@yield('meta-title', 'Gonshim Home')</title>
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
@@ -16,15 +16,18 @@
 
 <body>
     @include('layouts/partials/navbar')
+    <!-- yield only on landing page (needs to be refactored) -->
+    @yield('content-landing')   
 
-<!--     <div class="container">
+    <!-- regular pages -->
+    <div class="container">
         <div class="row">
             <div class="col-md-7">
- -->                @yield('content')
-<!--             </div>
+            @yield('content')
+            </div>
         </div>
     </div>
- -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>    
     <script src="/assets/js/modern-business.js"></script>

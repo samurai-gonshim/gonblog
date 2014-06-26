@@ -38,6 +38,10 @@
             <div class="form-group">
                 {{ Form::hidden('user_id', Auth::user()->id) }}
             </div>
+
+            <!-- Tags -->
+            @include('layouts.partials.taginput')
+
             <!-- Submit Field -->
             <div class="form-group">
                 {{ Form::submit('Submit', ['class' => 'btn btn-sm btn-primary']) }}

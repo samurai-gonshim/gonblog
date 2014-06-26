@@ -45,8 +45,17 @@ class BlogsController extends BaseController {
      */
     public function store()
     {
-        $input = Input::only('title', 'body', 'user_id');
+        $input = Input::only('title', 'body', 'user_id', 'tags');
         // user_id gets passed through hidden form
+        $t = Input::only('tags');
+
+        foreach($t['tags'] as $tn) {
+            $tag = Tag::where('tag', '=', $tn)->first();
+            var_dump($tag);
+        }
+
+            // $tag = Tag::where('tag', '=', $t)->first();
+        return var_dump($t['tags']);
 
         $this->blogForm->validate($input);  // see /app/start/global.php for error handling 
         // var_dump($input);
