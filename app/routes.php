@@ -20,3 +20,18 @@ Route::resource('blogs', 'BlogsController');
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'update']]);
 Route::get('/user/{username}', ['as' => 'profile', 'uses' => 'ProfilesController@show']);
 
+# Angular Testing
+Route::get('angular', function() 
+{
+    return View::make('angular.index');
+});
+
+Route::get('tagtest', function()
+{
+    return View::make('angular.tagtest');
+});
+
+Route::get('tags', function() 
+{
+    return Tag::all();
+});

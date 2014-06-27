@@ -1,4 +1,6 @@
 body {
+    /* background image from subtlepattern.com */
+    background: url('../img/nice_snow.png');
     padding-top: 50px;
 }
 
@@ -14,8 +16,8 @@ body {
 }
 
 .full-width-image {
-    /*background: url(http://lorempixel.com/1920/500/) no-repeat center center;*/
-    background: url(/assets/img/openphotonet_11.jpg) no-repeat center center;
+/*    background: url(http://lorempixel.com/1920/500/nature) no-repeat center center;*/
+    background: url(../img/openphotonet_11.jpg) no-repeat center center;     
     background-size: cover;
     text-align: center;
     padding: 100px 0;
