@@ -9,7 +9,18 @@
         {
             $scope.tags = tags;
         });
+
+        // $scope.returnCheckedTagIds = function() {
+        //     var ids = [];
+        //     angular.forEach($scope.tags, function(tag)
+        //     {
+        //         if(tag.checked) 
+        //     });
+        // };
+
     });
+
+
 
 
 })();

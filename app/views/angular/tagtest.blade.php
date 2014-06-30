@@ -9,7 +9,7 @@
     {{ HTML::style('assets/css/bootstrap.min.css') }}
     {{ HTML::style('assets/css/style.css') }}
 </head>
-<body ng-controller="TagsController">
+<body ng-controller="TagsController as ts">
 
     <div class="container">
         <div class="row">
@@ -21,12 +21,14 @@
 
             <input type="text" placeholder="Filter Tags" ng-model="search">
 
-            <ul>
+            <ul class="list-inline">
                 <li ng-repeat="tag in tags | filter:search">
-                    [[ tag.tag ]]
+                <input type="checkbox" ng-model="tag.checked">
+                     [[ tag.tag ]] checked: [[ tag.checked ]]
                 </li>
             </ul>
-
+            
+            <pre> [[ tags | json ]] </pre>
 
     </div>
 
