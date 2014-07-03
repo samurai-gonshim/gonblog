@@ -24,12 +24,12 @@
             <ul class="list-inline">
                 <li ng-repeat="tag in tags | filter:search">
                 <input type="checkbox" ng-model="tag.checked">
-                     [[ tag.tag ]] checked: [[ tag.checked ]]
+                     [[ tag.tag ]]
                 </li>
             </ul>
             
-            <pre> [[ tags | json ]] </pre>
-
+<!--             <pre> [[ ts.returnCheckedTagIds() ]] </pre>
+ -->
     </div>
 
 

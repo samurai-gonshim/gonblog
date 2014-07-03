@@ -11,10 +11,10 @@
         });
 
         // $scope.returnCheckedTagIds = function() {
-        //     var ids = [];
+        //     $scope.checkedids = [];
         //     angular.forEach($scope.tags, function(tag)
         //     {
-        //         if(tag.checked) 
+        //         if(tag.checked) $scope.checkedids[tag.id] = true;
         //     });
         // };
 

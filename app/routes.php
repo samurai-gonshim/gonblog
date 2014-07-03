@@ -15,10 +15,13 @@ Route::resource('sessions', 'SessionsController', ['only' => ['create', 'store',
 # Blog/Comment Test
 // Route::get('blog', ['as' => 'blog', 'uses' => 'BlogsController@index']);
 Route::resource('blogs', 'BlogsController');
+Route::resource('comments', 'CommentsController', ['only' => ['create', 'store', 'destroy']]);
 
 # Profile
 Route::resource('profile', 'ProfilesController', ['only' => ['show', 'edit', 'update']]);
 Route::get('/user/{username}', ['as' => 'profile', 'uses' => 'ProfilesController@show']);
+
+
 
 # Angular Testing
 Route::get('angular', function() 

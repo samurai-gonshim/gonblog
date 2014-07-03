@@ -52,6 +52,9 @@
                 <i class="fa fa-comment-o fa-2x pull-left fa-border text-info"></i><p>{{ $comment->comment }}</p>
             @endforeach
 
+            <!-- leave comment -->
+            <a class="btn btn-sm btn-primary" href={{route('comments.create', ['id' => $blog->id, 'commentable' => 'Blog'])}}>Leave Comment <i class="fa fa-angle-right"></i></a>
+
         </div>
 
         <div class="col-lg-4">
