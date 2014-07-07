@@ -11,8 +11,22 @@
 
   <div ng-controller="MyController" >
       <span>{{ myData }}</span>
+
+      <ol>
+        <li ng-repeat-start="(name, value) in myObject">{{name}}</li>
+        <li ng-repeat-end>{{value}}</li>
+      </ol>
+
       <button ng-click="buttonclicked()"> Test! </button>
-      <div ng-include="myFlag && 'test.php'"></div>
+      <!-- <div ng-include="myFlag && 'test.php'"></div> -->
+      <div ng-show="myFlag"> 
+      <div> Comment: </div>
+      <div>
+      <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
+      </div>      
+      <button>Submit!</button>
+      </div>
+
   </div>
 
   <script>
@@ -25,6 +39,9 @@
       $scope.buttonclicked = function() {
         $scope.myFlag = true;
       };
+
+      $scope.myObject = { var1 : "val1", var2 : "val3", var3 : "val3"};
+
     });
   </script>
     
