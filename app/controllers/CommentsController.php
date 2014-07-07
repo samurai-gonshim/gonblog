@@ -16,7 +16,8 @@ class CommentsController extends BaseController {
 		// var_dump($id);
 		// return var_dump($commentable);
 		// return var_dump($request);
-        return View::make('comments.create')->with($request);
+	
+        return View::make('comments.create', compact('request'));
 	}
 
 	/**
