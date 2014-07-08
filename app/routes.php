@@ -2,7 +2,7 @@
 
 # Home
 Route::get('/', function() {
-    dd(App::environment());
+    // dd(App::environment());
     return Config::get('database.connections.mysql');
 });
 // Route::get('/', ['as' => 'home', 'uses' => 'PagesController@index']);
