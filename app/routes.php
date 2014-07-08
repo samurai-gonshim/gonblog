@@ -1,11 +1,11 @@
 <?php
 
 # Home
-Route::get('/', function() {
-    // dd(App::environment());
-    return Config::get('database.connections.mysql');
-});
-// Route::get('/', ['as' => 'home', 'uses' => 'PagesController@index']);
+// Route::get('/', function() {
+//     // dd(App::environment());
+//     return Config::get('database.connections.mysql');
+// });
+Route::get('/', ['as' => 'home', 'uses' => 'PagesController@index']);
 
 # Registration
 Route::get('/register', ['as' => 'registration', 'uses' => 'RegistrationController@create'])->before('guest');
